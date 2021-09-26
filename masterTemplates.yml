@@ -1,0 +1,81 @@
+# This file (masterTemplates.yml) is a part of LCloud Command and Control (LCloudBrain) configurations.
+
+bedwars:
+  a1:
+    players: 30
+    spec: "i12"
+    setuptemplate: "BedWars-V5-A"
+  a2:
+    players: 120
+    spec: "i24"
+    setuptemplate: "BedWars-V5-A"
+  a3:
+    players: 170
+    spec: "i48"
+    setuptemplate: "BedWars-V5-A"
+  b1:
+    players: 30
+    spec: "i12"
+    setuptemplate: "BedWars-V5-B"
+  b2:
+    players: 120
+    spec: "i24"
+    setuptemplate: "BedWars-V5-B"
+  b3:
+    players: 170
+    spec: "i48"
+    setuptemplate: "BedWars-V5-B"
+  mega:
+    players: 300
+    spec: "i48"
+    setuptemplate: "BedWars-V5-MEGA"
+    playerReflector:
+      enabled: true
+      loadbalance: "static-roundrobin"
+      serverCount: 3
+      maxPlayersPerServer: 100
+      # HUMP = Very high throughput and microseconds of latency. Does not work outside LuckyNetwork 2021 Infrastructure.
+      # Redis = Uses the existing Redis Infrastructure. Latency might suffer.
+      # RabbitMQ = Uses the existing Local RabbitMQ. Highly reliable, latency might suffer.
+      # UMP = High throughput with acceptable latency. Can be used to replace HUMP if reliability and compatibility are required. Works with LuckyNetwork 2017+ Infrastructure.
+      # LKD = Low throughput with acceptable of latency. Highly secure, useful to syncronize sensitive chat messages. Works with LuckyNetwork 2017+ Infrastructure with AES-NI.
+      syncMethod: "HUMP"
+      sync:
+        chat: true
+        world: false
+        blocks: true
+        particles: true
+        pvp: true
+        items: true
+        hand: true
+        inventory: true
+        entity:
+          player-spawned:
+            arrows: true
+            fireball: true
+            dropped: true
+          server-spawned:
+            bedwars1058:
+              mobs: true
+            natural:
+              mobs: false
+          other:
+            spectator: false
+hub:
+  1:
+    players: 70
+    spec: "i24"
+    setuptemplate: "Hub-V5"
+bungeecord:
+  1:
+    players: 80
+    spec: "i11"
+    setuptemplate: "BungeeCord-V5"
+  2:
+    players: 210
+    spec: "i24"
+    setuptemplate: "BungeeCord-V5"
+  3:
+    players: 400
+    spec: "i48"
+    setuptemplate: "BungeeCord-V5"
