@@ -1,0 +1,52 @@
+# This file (specification.yml) is a part of LCloud Provisioning and Monitoring (LCloudProvision) configurations.
+# Values should be syncronized with the actual infrastructure value.
+
+i11:
+  ram: 1024
+  cpu: 1
+  loc:
+    - ams
+    - sin
+    - syn
+    - jkt
+    - sby
+
+i12:
+  ram: 2048
+  cpu: 1
+  loc:
+    - ams
+    - sin
+    - syn
+    - jkt
+    - sby
+
+i24:
+  ram: 4096
+  cpu: 2
+  loc:
+    - ams
+    - sin
+    - syn
+
+i48:
+  ram: 8192
+  cpu: 4
+  loc:
+    - ams
+    - sin
+    - syn
+
+i616:
+  ram: 16384
+  cpu: 6
+  loc:
+    - ams
+    - sin
+    - syn
+  
+i3264:
+  ram: 65536
+  cpu: 32
+  loc:
+    - sin
