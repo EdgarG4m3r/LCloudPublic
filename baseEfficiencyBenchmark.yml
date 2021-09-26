@@ -1,0 +1,455 @@
+# This file (baseEfficiencyBenchmark.yml) is a part of LCloud Command and Control (LCloudBrain) configurations.
+# Values configured are efficiency target that will be used if in a rare occasions that the BrainAI is deemed to be unreliable during runtime to prevent total failure to the Auto Scaling & Provisioning System.
+# Do not modify this configuration manually.
+
+# DATA GENERATED ON 09/25/2021 GMT+8 BASED ON DUMP 08/23/2021 - 09/24/2021 | DO NOT MODIFY MANUALLY. KEEP UPDATED BY REGENERATING.
+
+mon:
+  100:
+    values: 97
+  200:
+    values: 97
+  300:
+    values: 97
+  400:
+    values: 97
+  500:
+    values: 97
+  600:
+    values: 97
+  700:
+    values: 97
+  800:
+    values: 95
+  900:
+    values: 90
+  1000:
+    values: 87
+  1100:
+    values: 87
+  1200:
+    values: 85
+  1300:
+    values: 85
+  1400:
+    values: 80
+  1500:
+    values: 80
+  1600:
+    values: 85
+  1700:
+    values: 87
+  1800:
+    values: 87
+  1900:
+    values: 85
+  2000:
+    values: 87
+  2100:
+    values: 87
+  2200:
+    values: 90
+  2300:
+    values: 90
+  2400:
+    values: 97
+tue:
+  100:
+    values: 97
+  200:
+    values: 97
+  300:
+    values: 97
+  400:
+    values: 97
+  500:
+    values: 97
+  600:
+    values: 97
+  700:
+    values: 97
+  800:
+    values: 95
+  900:
+    values: 90
+  1000:
+    values: 87
+  1100:
+    values: 87
+  1200:
+    values: 85
+  1300:
+    values: 85
+  1400:
+    values: 80
+  1500:
+    values: 80
+  1600:
+    values: 85
+  1700:
+    values: 87
+  1800:
+    values: 87
+  1900:
+    values: 85
+  2000:
+    values: 87
+  2100:
+    values: 87
+  2200:
+    values: 90
+  2300:
+    values: 90
+  2400:
+    values: 97
+wen:
+  100:
+    values: 97
+  200:
+    values: 97
+  300:
+    values: 97
+  400:
+    values: 97
+  500:
+    values: 97
+  600:
+    values: 97
+  700:
+    values: 97
+  800:
+    values: 95
+  900:
+    values: 90
+  1000:
+    values: 87
+  1100:
+    values: 87
+  1200:
+    values: 85
+  1300:
+    values: 85
+  1400:
+    values: 80
+  1500:
+    values: 80
+  1600:
+    values: 85
+  1700:
+    values: 87
+  1800:
+    values: 87
+  1900:
+    values: 85
+  2000:
+    values: 87
+  2100:
+    values: 87
+  2200:
+    values: 90
+  2300:
+    values: 90
+  2400:
+    values: 97
+th:
+  100:
+    values: 97
+  200:
+    values: 97
+  300:
+    values: 97
+  400:
+    values: 97
+  500:
+    values: 97
+  600:
+    values: 97
+  700:
+    values: 97
+  800:
+    values: 95
+  900:
+    values: 90
+  1000:
+    values: 87
+  1100:
+    values: 87
+  1200:
+    values: 85
+  1300:
+    values: 85
+  1400:
+    values: 80
+  1500:
+    values: 80
+  1600:
+    values: 85
+  1700:
+    values: 87
+  1800:
+    values: 87
+  1900:
+    values: 85
+  2000:
+    values: 87
+  2100:
+    values: 87
+  2200:
+    values: 90
+  2300:
+    values: 90
+  2400:
+    values: 97
+fri:
+  100:
+    values: 97
+  200:
+    values: 97
+  300:
+    values: 97
+  400:
+    values: 97
+  500:
+    values: 97
+  600:
+    values: 97
+  700:
+    values: 97
+  800:
+    values: 95
+  900:
+    values: 90
+  1000:
+    values: 87
+  1100:
+    values: 90
+  1200:
+    values: 90
+  1300:
+    values: 90
+  1400:
+    values: 75
+  1500:
+    values: 80
+  1600:
+    values: 85
+  1700:
+    values: 87
+  1800:
+    values: 87
+  1900:
+    values: 85
+  2000:
+    values: 87
+  2100:
+    values: 87
+  2200:
+    values: 90
+  2300:
+    values: 90
+  2400:
+    values: 97
+sat:
+  100:
+    values: 97
+  200:
+    values: 97
+  300:
+    values: 97
+  400:
+    values: 97
+  500:
+    values: 97
+  600:
+    values: 97
+  700:
+    values: 97
+  800:
+    values: 95
+  900:
+    values: 90
+  1000:
+    values: 87
+  1100:
+    values: 87
+  1200:
+    values: 85
+  1300:
+    values: 85
+  1400:
+    values: 80
+  1500:
+    values: 80
+  1600:
+    values: 85
+  1700:
+    values: 87
+  1800:
+    values: 87
+  1900:
+    values: 85
+  2000:
+    values: 85
+  2100:
+    values: 85
+  2200:
+    values: 95
+  2300:
+    values: 95
+  2400:
+    values: 97
+sun:
+  100:
+    values: 97
+  200:
+    values: 97
+  300:
+    values: 97
+  400:
+    values: 97
+  500:
+    values: 97
+  600:
+    values: 97
+  700:
+    values: 97
+  800:
+    values: 95
+  900:
+    values: 90
+  1000:
+    values: 87
+  1100:
+    values: 87
+  1200:
+    values: 87
+  1300:
+    values: 87
+  1400:
+    values: 85
+  1500:
+    values: 87
+  1600:
+    values: 87
+  1700:
+    values: 87
+  1800:
+    values: 87
+  1900:
+    values: 87
+  2000:
+    values: 90
+  2100:
+    values: 90
+  2200:
+    values: 90
+  2300:
+    values: 90
+  2400:
+    values: 97
+
+# RuleID = 0
+# RuleDesc0 = Failsafe rule that grants LCloudBrain the ability to provision Unlimited Number of Servers as long as the future's payment value are well within the cutoff value.
+# RuleDesc1 = Fail-Open rule
+fail:
+  alias: "ddos"
+  100:
+    values: -1
+  200:
+    values: -1
+  300:
+    values: -1
+  400:
+    values: -1
+  500:
+    values: -1
+  600:
+    values: -1
+  700:
+    values: -1
+  800:
+    values: -1
+  900:
+    values: -1
+  1000:
+    values: -1
+  1100:
+    values: -1
+  1200:
+    values: -1
+  1300:
+    values: -1
+  1400:
+    values: -1
+  1500:
+    values: -1
+  1600:
+    values: -1
+  1700:
+    values: -1
+  1800:
+    values: -1
+  1900:
+    values: -1
+  2000:
+    values: -1
+  2100:
+    values: -1
+  2200:
+    values: -1
+  2300:
+    values: -1
+  2400:
+    values: -1
+
+# RuleID = 1
+# RuleDesc0 = Rule that can be used during an event or if a playersurge is expected.
+event:
+  100:
+    values: 50
+  200:
+    values: 50
+  300:
+    values: 50
+  400:
+    values: 50
+  500:
+    values: 50
+  600:
+    values: 50
+  700:
+    values: 50
+  800:
+    values: 50
+  900:
+    values: 50
+  1000:
+    values: 50
+  1100:
+    values: 50
+  1200:
+    values: 50
+  1300:
+    values: 50
+  1400:
+    values: 50
+  1500:
+    values: 50
+  1600:
+    values: 50
+  1700:
+    values: 50
+  1800:
+    values: 50
+  1900:
+    values: 50
+  2000:
+    values: 50
+  2100:
+    values: 50
+  2200:
+    values: 50
+  2300:
+    values: 50
+  2400:
+    values: 50
