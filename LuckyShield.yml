@@ -1,0 +1,62 @@
+#                  _____                    _____                    _____                    _____                    _____            _____                  
+#                 /\    \                  /\    \                  /\    \                  /\    \                  /\    \          /\    \                 
+#                /::\    \                /::\____\                /::\    \                /::\    \                /::\____\        /::\    \                
+#               /::::\    \              /:::/    /                \:::\    \              /::::\    \              /:::/    /       /::::\    \               
+#              /::::::\    \            /:::/    /                  \:::\    \            /::::::\    \            /:::/    /       /::::::\    \              
+#             /:::/\:::\    \          /:::/    /                    \:::\    \          /:::/\:::\    \          /:::/    /       /:::/\:::\    \             
+#            /:::/__\:::\    \        /:::/____/                      \:::\    \        /:::/__\:::\    \        /:::/    /       /:::/  \:::\    \            
+#            \:::\   \:::\    \      /::::\    \                      /::::\    \      /::::\   \:::\    \      /:::/    /       /:::/    \:::\    \           
+#          ___\:::\   \:::\    \    /::::::\    \   _____    ____    /::::::\    \    /::::::\   \:::\    \    /:::/    /       /:::/    / \:::\    \          
+#         /\   \:::\   \:::\    \  /:::/\:::\    \ /\    \  /\   \  /:::/\:::\    \  /:::/\:::\   \:::\    \  /:::/    /       /:::/    /   \:::\ ___\         
+#        /::\   \:::\   \:::\____\/:::/  \:::\    /::\____\/::\   \/:::/  \:::\____\/:::/__\:::\   \:::\____\/:::/____/       /:::/____/     \:::|    |        
+#        \:::\   \:::\   \::/    /\::/    \:::\  /:::/    /\:::\  /:::/    \::/    /\:::\   \:::\   \::/    /\:::\    \       \:::\    \     /:::|____|        
+#         \:::\   \:::\   \/____/  \/____/ \:::\/:::/    /  \:::\/:::/    / \/____/  \:::\   \:::\   \/____/  \:::\    \       \:::\    \   /:::/    /         
+#          \:::\   \:::\    \               \::::::/    /    \::::::/    /            \:::\   \:::\    \       \:::\    \       \:::\    \ /:::/    /          
+#           \:::\   \:::\____\               \::::/    /      \::::/____/              \:::\   \:::\____\       \:::\    \       \:::\    /:::/    /           
+#            \:::\  /:::/    /               /:::/    /        \:::\    \               \:::\   \::/    /        \:::\    \       \:::\  /:::/    /            
+#             \:::\/:::/    /               /:::/    /          \:::\    \               \:::\   \/____/          \:::\    \       \:::\/:::/    /             
+#              \::::::/    /               /:::/    /            \:::\    \               \:::\    \               \:::\    \       \::::::/    /              
+#               \::::/    /               /:::/    /              \:::\____\               \:::\____\               \:::\____\       \::::/    /               
+#                \::/    /                \::/    /                \::/    /                \::/    /                \::/    /        \::/    /                
+#                 \/____/                  \/____/                  \/____/                  \/____/                  \/____/          \/____/                      
+#
+# Project LuckyShield - LuckyNetwork Developer Team 2017
+# Bungeecord Module
+enabled: true
+
+# InterLink compability is based on InterLink Protocol specification 2017/12-BVE-REV1
+interlink:
+  # Enable InterLink protocol compability. Instead of blocking the connection from the proxy, the connection will be blocked from InterLink.
+  enabled: true
+  forward-block:
+    # Available Forward-Protocol TCP, UDP
+    # TCP is reliable, useful to ensure that InterLink receives the command.
+    # UDP is unreliable but fast, useful when Network Link Saturation imminent
+    forward-protocol: UDP
+    # Available Forward-Type ORIGIN, REGION, BROADCAST, FIREWALL
+    # Forward Type define which InterLink will receive the block command to block a certain connection.
+    # ORIGIN will instruct the InterLink that is currently receiving the connection to block the connection from the edge.
+    # REGION will instruct all the InterLink in the region to block the connection from the edge. Useful fo small scale Bot attack
+    # GLOBAL will instruct ALL the InterLink to block the connection from the edge. Useful for large Bot attack or L7 DDoS attack
+    
+    # FIREWALL will instruct InterLink firewall to block the connection with Firewall module. Useful for large DDoS attack or when Network Link Saturation imminent.
+    # WARNING! Once the connection is blocked by Firewall module, it is up to the InterLink Firewall discretion to unblock the connection.
+    forward-type: REGION
+    time: 120s
+  # If enabled, Will disable InterLink from automatically switching forward-type to FIREWALL if link saturation is imminent.
+  override-toggle: true
+
+# Experimental Option below this line. Proceed with caution
+
+# Neo is a Global Packet Accelerator project that is not yet finished
+neo:
+  # This option will toggle support for Neo Protocol. In accordance to Neo Protocol specification 2017-A
+  enabled: false
+  # Will forward the block to the neo edges where the connection originates
+  # Useful for Large-Scale DDoS attack, but might be abused
+  forward-block: true
+  # Treshold before instructing neo to enable firewall and disable Global Accelerator.
+  # Recommend to set this value above 5000 for CPS and 2000000 for PPS as this applies to all Neo Proxies.
+  threshold:
+    cps: 5000
+    pps: 2000000
