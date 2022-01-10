@@ -1,2 +1,3 @@
 Iteration #1 | 1000 packets sent - 142 received | 85,8% packet loss | FAILURE
 Iteration #2 | 100 packets sent - 94 received | 6% packet loss | FAILURE
+Iteration #3 | 1000 packets sent - 9918 received | >1% packet loss | SUCCESS
